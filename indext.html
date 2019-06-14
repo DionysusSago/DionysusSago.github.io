@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>定时跳转</title>
+    <style>
+      body{background-image:url(img/1.gif);}
+      div{margin:20px auto;width:350px;height:150px;border:0px solid #000;padding:10px;}
+      h1{text-align:center;color:#e6e6e6;}
+      span{font-size:150%;color:#f2f2f2;margin:0 10px;}
+	  p{color:#e6e6e6}
+    </style>
+  </head>
+  <body>	
+  <audio autoplay="autoplay" >
+	<source src="萧亚轩 - 遗失的心跳 (KTV版伴奏).mp3" >
+	</audio>
+  <div>
+	<h1>欢迎登录</h1>
+
+	<a href = "导航.html">
+		<span id = "seconds">15</span>秒后系统会自动跳转网页之家，也可单击此链接跳转
+		</a>
+		</div>
+		<marquee><h2><p>建议带上耳机观看哦~</p></h2></marquee>
+	<script>
+		function timing(secs,url){
+			var seconds = document.getElementById('seconds');
+			seconds.innerHTML = --secs;
+			if (secs > 0){
+			setTimeout('timing('  + secs + ',\'' + url + '\')',1000);
+			}else{
+				location.href = url;
+			}
+		};
+		timing(15,'导航.html');
+		function toggleSound() {
+             var music = document.getElementById("ad");//获取ID  
+                 console.log(music);
+                 console.log(music.paused);
+             if (music.paused) { //判读是否播放  
+                 music.paused=false;
+                 music.play(); //没有就播放
+            }  
+             
+         }
+
+setInterval("toggleSound()",1);
+
+setInterval("toggleSound()",1);
+
+		</script>
+		
+		</body>
+		</html>

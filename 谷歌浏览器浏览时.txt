@@ -1,0 +1,5 @@
+由于谷歌浏览器限制音频自动播放
+
+本人网页里有音频存在，所以需要在浏览前，在chrome 浏览器中输入：chrome://flags，搜索“Autoplay policy”，默认为“Default”，
+
+修改为 “No user gesture is required”即可

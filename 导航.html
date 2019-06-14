@@ -1,0 +1,381 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/index.css">
+<title>经典九宫格流式布局</title>
+<!--
+经典九宫格流式布局
+按照比例设置CSS宽度
+-->
+</head>
+<style>
+.nav { border: 0px  height:26px; background:#ffb3b3 ;}
+.nav ul { list-style: none; margin: 0px; padding: 0px; }
+.nav ul li { float:left; padding: 0px 8px; height: 26px; line-height: 26px; }
+h4{color:  #f2f2f2;}
+h2{color:  #f2f2f2;}
+p{color: #f2f2f2;}
+#huoli{
+	height:150px;
+	margin-top:20px;
+}
+.biaoti{
+	color:#FFF;
+	font-size:16px;
+	font-weight:bolider;
+	width:220px;
+	height:40px;
+	background-color:#c6d9ec;
+	border-radius:0px 10px 10px 0px;
+	padding-left:30px;
+	line-height:40px;
+}
+#huoli ul{
+	padding-left:20px;
+	padding-top:10px;
+}
+#huoli li{
+	float:left;
+	list-style:none;
+	margin-left:10px;
+	width:80px;
+	margin-right:6px;
+}
+#huoli li a {
+	float:left;
+	font-size:12px;
+	color:#333
+	text-decoration:none;
+}
+#huoli li a : hover{		color:#ff8080;
+}
+#list ul {
+	list-style:none;
+	padding:15px;
+}
+#list ul li{
+	background:url(imges/icon1.gift)no-repeat 5px center;
+	border-bottom:1px dashed #666666;
+	padding-bottom:8px;
+	padding-left:15px;
+	margin-bottom:8px;
+}
+#list li a {
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+}
+
+
+
+</style>
+<body >
+<!--header开始-->
+<header><h2><center>航海王<center></h2></header>
+<!--header结束-->
+<nav> <h4><center>草帽成员</center></h4>
+<div class="nav" id="navlist"  ></id></div>
+</nav>
+
+	<script>
+		var navlist =['路飞','索大','乌索普','山治','娜美','乔巴','罗宾','弗兰奇','布鲁克','甚平','黄金梅丽号','万里阳光号'];
+	var str = '<ul>';
+	for (var i in navlist ){
+	str +='<li><a>'+navlist[i]+'</a></li>';
+	}
+	str += '</ul>'
+	document.getElementById('navlist').innerHTML=str;
+		
+		</script>
+		<marquee><h1><p>超燃混剪！冲！</p></h1></marquee>
+		<div class = "zuixia">
+	<video width="1265" height="300" controls> 
+	<source src="【海贼王】超燃摧泪混剪-能坚持三分钟不哭算我输-国语流畅.mp4" type="video/mp4">
+	</video>
+</div>
+<div class="box">
+   <div class="barrage-container-wrap clearfix">
+    <div class="barrage-container">
+    </div> 
+  </div>
+  <div class="send-wrap">
+    <input type="text" class="input" placeholder="弹幕发送">
+    <span class="send-btn">发送</span>
+  </div> 
+</div>
+
+
+
+<div class = "bottom">
+<h5 class="biaoti">卷目</h5>
+	<ul>
+
+		<li><a href ="https://www.fzdm.com/manhua/002//Vol_001/">第一卷</a></li>
+
+
+		<li><a href ="https://www.fzdm.com/manhua/002//Vol_002/">第二卷</a></li>
+
+	
+		<li><a href ="https://www.fzdm.com/manhua/002//Vol_003/">第三卷</a></li>
+
+	
+		<li><a href ="https://www.fzdm.com/manhua/002//">更多.......</a></li>
+
+</div>
+<!--中开始-->
+
+<div class="zhong">
+	<div class="m0"><marquee><img src="img/2.gif"><img src="img/山治.gif"><img src="img/索大.gif"><img src="img/乌索普.gif"><img src="img/娜美.gif"><img src="img/乔巴.gif"><img src="img/罗宾.gif"><img src="img/弗兰奇.gif"><img src="img/布鲁克.gif"><img src="img/甚平.gif"></marquee></div>
+	<div class="m2"><a href = "https://baike.baidu.com/item/%E8%92%99%E5%A5%87%C2%B7D%C2%B7%E8%B7%AF%E9%A3%9E/726966?fromtitle=%E8%B7%AF%E9%A3%9E&fromid=1347493&fr=aladdin"><font>蒙.D.路飞</a></font><img src= "img/路飞.gif"></div>
+	<div class="m3"><font><a href = "https://zhidao.baidu.com/question/581661090.html">索大</a></font><img src= "img/索大.gif"></div>
+	<div class="m4"><font><a href = "https://baike.baidu.com/item/%E5%B1%B1%E6%B2%BB/1869073?fr=aladdin">山治</a></font><img src= "img/山治.gif"></div>
+	<div class="m5"><font><a href = "https://baike.baidu.com/item/%E5%A8%9C%E7%BE%8E/67571?fr=aladdin">娜美</a></font><img src= "img/娜美.gif"></div>
+	<div class="m6"><font><a href = "https://baike.baidu.com/item/%E4%B9%8C%E7%B4%A2%E6%99%AE/1524386?fr=aladdin">乌索普</a></font><img src= "img/乌索普.gif"></div>
+	<div class="m7"><font><a href = "https://baike.baidu.com/item/%E6%89%98%E5%B0%BC%E6%89%98%E5%B0%BC%C2%B7%E4%B9%94%E5%B7%B4/7366423?fromtitle=%E4%B9%94%E5%B7%B4&fromid=3193494&fr=aladdin">乔巴</a></font><img src= "img/乔巴.gif"></div>
+	<div class="m8"><font><a href = "https://baike.baidu.com/item/%E5%A6%AE%E5%8F%AF%C2%B7%E7%BD%97%E5%AE%BE/8422464?fromtitle=%E7%BD%97%E5%AE%BE&fromid=13473255&fr=aladdin">罗宾</a></font><img src= "img/罗宾.gif"></div>
+	<div class="m9"><font><a href = "https://baike.baidu.com/item/%E5%B8%83%E9%B2%81%E5%85%8B/24357?fr=aladdin">布鲁克</a></font><img src= "img/布鲁克.gif"></div>
+	<div class="m1"><font><a href = "https://baike.baidu.com/item/%E5%BC%97%E5%85%B0%E5%A5%87/10253603?fr=aladdin">弗兰奇</a></font><img src= "img/弗兰奇.gif"></div>
+</div>
+<!--中结束-->
+
+
+
+
+<!--下开始-->
+<div class="xia">
+<marquee><div class = "m10"><img src ="img/草帽1.gif"></div>
+<div class = "m11"><img src ="img/草帽2.gif"></div>
+<div class = "m12"><img src ="img/草帽3.gif"></div>
+</marquee>
+<!--<audio autoplay="autoplay" >
+<source src="Piano Master - Bamboo.mp3" >
+</audio>-->
+</div>
+<!--下结束-->
+<script>
+(function(){
+  var barrageArray = [
+          {
+            url: '用户头像',
+            text: '秋天爱美丽',
+            level: 10
+          },
+          {
+            url: '用户头像',
+            text: '今天很开心啊',
+            level: 10
+          },
+          {
+            url: '用户头像',
+            text: '1313',
+            level: 10
+          },
+          {
+            url: '',
+            text: '路飞我爱你',
+            level: 10
+          },
+          {
+            url: '',
+            text: '香克斯是真的很温柔了',
+            level: 10
+          },
+           {
+            url: '',
+            text: '海迷',
+            level: 10
+          },
+          {
+            url: '',
+            text: '背景音乐真好听啊',
+            level: 10
+          },
+          {
+            url: '',
+            text: '上一页面背景音乐是遗失的心跳',
+            level: 10
+          },
+          {
+            url: '',
+            text: '索大太帅了吧',
+            level: 10
+          },
+          {
+            url: '',
+            text: '太燃啦',
+            level: 10
+          },
+      ];
+  var barrageColorArray = [
+    '#0099CC','#333333', '#009966','#FFFF66','#9933FF','#FFFF99','#CCCCFF','#CC9933','#FFFF66'
+  ];
+  var barrageTipWidth = 50; //提示语的长度
+ 
+  var barrageBoxWrap = document.querySelector('.barrage-container-wrap');;
+  var barrageBox = document.querySelector('.barrage-container');
+  var inputBox = document.querySelector('.input');
+  var sendBtn = document.querySelector('.send-btn');
+ 
+  //容器的宽高度
+  var barrageWidth = ~~window.getComputedStyle(barrageBoxWrap).width.replace('px','');
+  var barrageHeight = ~~window.getComputedStyle(barrageBoxWrap).height.replace('px','');
+ 
+  //发送
+  function sendMsg(){
+    var inputValue = inputBox.value;
+    inputValue .replace(/\ +/g, "");
+ 
+    if (inputValue.length <= 0) {
+        alert('请输入');
+        return false;
+    }
+ 
+    //生成弹幕
+    createBarrage(inputValue,true);
+    inputBox.value = ''; 
+  }
+   
+ 
+  //创建弹幕
+  function createBarrage(msg, isSendMsg){
+    var divNode = document.createElement('div');
+    var spanNode = document.createElement('span');
+ 
+    divNode.innerHTML = msg;
+    divNode.classList.add('barrage-item');
+    barrageBox.appendChild(divNode);
+ 
+    spanNode.innerHTML = '举报';
+    spanNode.classList.add('barrage-tip');
+    divNode.appendChild(spanNode);
+ 
+    barrageOffsetLeft = getRandom(barrageWidth, barrageWidth*2);
+    barrageOffsetLeft = isSendMsg ? barrageWidth : barrageOffsetLeft
+    barrageOffsetTop = getRandom(10, barrageHeight-10);
+    barrageColor = barrageColorArray[Math.floor(Math.random()*(barrageColorArray.length))];
+ 
+    //执行初始化滚动
+    initBarrage.call(divNode,{
+      left : barrageOffsetLeft,
+      top : barrageOffsetTop,
+      color : barrageColor
+    });
+  }
+ 
+  //初始化弹幕移动(速度，延迟)
+  function initBarrage(obj) {
+    //初始化
+    obj.top = obj.top || 0;
+    obj.class = obj.color || '#fff';
+    this.style.left = obj.left + 'px';
+    this.style.top = obj.top + 'px';
+    this.style.color = obj.color;  
+ 
+    //添加属性
+    this.distance = 0;
+    this.width = ~~window.getComputedStyle(this).width.replace('px','');
+    this.offsetLeft = obj.left;
+    this.timer = null;
+ 
+    //弹幕子节点
+    var barrageChileNode = this.children[0];
+    barrageChileNode.style.left = (this.width-barrageTipWidth)/2 + 'px';
+ 
+    //运动
+    barrageAnimate(this);
+ 
+    //停止
+    this.onmouseenter = function(){
+      barrageChileNode.style.display= 'block';
+      cancelAnimationFrame(this.timer);
+    };
+ 
+    this.onmouseleave = function(){
+      barrageChileNode.style.display = 'none';
+      barrageAnimate(this);
+    };
+ 
+    //举报
+    barrageChileNode.onclick = function(){
+      alert('举报成功');
+    }
+  }
+  
+  //弹幕动画
+  function barrageAnimate(obj){
+    move(obj);
+ 
+    if(Math.abs(obj.distance) < obj.width+obj.offsetLeft){
+      obj.timer = requestAnimationFrame(function(){
+        barrageAnimate(obj);
+      });
+    }else{
+      cancelAnimationFrame(obj.timer);
+      //删除节点
+      obj.parentNode.removeChild(obj);
+    }
+  }
+ 
+  //移动
+  function move(obj){
+    obj.distance--;
+    obj.style.transform = 'translateX('+obj.distance+'px)';
+    obj.style.webkitTransform = 'translateX('+obj.distance+'px)';
+  }
+ 
+  //随机获取高度
+  function getRandom(start, end){
+    return start +(Math.random() * (end - start));
+  }
+ 
+ 
+  /*******初始化事件**********/
+  //系统数据
+  barrageArray.forEach(function(item,index){
+    createBarrage(item.text, false);
+  });
+ 
+  //点击发送
+  sendBtn.onclick = sendMsg;   //点击发送
+ 
+  //回车
+  inputBox.onkeydown = function(e){
+    e = e|| window.event;
+    if(e.keyCode == 13){
+      send();
+    }
+  }
+ 
+})()
+ 
+//兼容写法
+(function() {
+    var lastTime = 0;
+    var vendors = ['webkit', 'moz'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] ||    // Webkit中此取消方法的名字变了
+                                      window[vendors[x] + 'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16.7 - (currTime - lastTime));
+            var id = window.setTimeout(function() {
+                callback(currTime + timeToCall);
+            }, timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+    }
+    if (!window.cancelAnimationFrame) {
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+    }
+}());
+</script>
+</body>
+</html>
